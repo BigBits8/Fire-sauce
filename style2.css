@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+h1{
+font-family: 'Bebas Neue', cursive;
+}
+
+.grid-container {
+  display: grid;
+   grid-column-gap: 100px;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  padding: 10px;
+  
+  justify-content: center;
+ ;
+  
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(27, 17, 17, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item img{
+    width:10vw;
+}
