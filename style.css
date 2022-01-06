@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: "Sigmar One", cursive;
+  display: flex;
+  align-items: center;
+  background-color: rgb(6, 102, 14);
+  color: white;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  text-align: center;
+  width: 10vw;
+}
+
+.brand-title {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+
+.navbar-links ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.navbar-links ul li a {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.search {
+  margin-right: 10px;
+}
+.search input {
+  width: 10vw;
+}
+/* Small screen */
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 14vw;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul li .link1 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li .link2 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li .link3 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+
+  .search {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .search button {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .search input {
+    width: 40vw;
+  }
+}
+/* Big screen */
+@media (min-width: 800px) {
+  .navbar-links ul li .link1 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar-links ul li .link2 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar-links ul li .link3 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
