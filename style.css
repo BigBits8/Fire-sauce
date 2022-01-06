@@ -4,13 +4,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sigmar One", cursive;
 }
 
+body{
+  
+  background-color: rgb(240, 222, 179)!important;
+  /* background-color: rgb(247, 241, 226)!important; */
+
+}
+/* NAVBAR */
 .navbar {
   /* font-family: 'Bebas Neue', cursive; */
   font-family: "Sigmar One", cursive;
   display: flex;
   align-items: center;
+  /* background-color: rgb(67, 155, 74); */
   background-color: rgb(6, 102, 14);
   color: white;
 }
@@ -25,6 +34,7 @@
 .brand-title {
   font-size: 2rem;
   margin: 0.5rem;
+  color:white;
 }
 
 .navbar-links ul {
@@ -162,3 +172,47 @@
     transform: translate(-50%, -50%);
   }
 }
+
+/* NAVBAR SLUT*/
+
+/* CONTENT */
+.container{
+  margin-top:50px;
+}
+.content-text{
+  background-color: rgb(111, 190, 21);
+  font-size: 20px;
+  padding-top: 20px;
+  border: solid 10px rgb(39, 38, 38);
+}
+.content-text p{
+  margin-top: 50px;
+}
+.content-text h1{
+  font-size: 50px;
+}
+.content-text h3{
+  font-size: 50px;
+  text-align: center;
+}
+
+.logo-wrapper{
+  text-align: center;
+}
+
+.logo-firstwefeast{
+  width: 20vw;
+  text-align: center;
+}
+
+.content-pic{
+ 
+  text-align: center;
+}
+
+.content-pic img{
+   margin-top:20px;
+}
+
+/* CONTENT SLUT */
+
