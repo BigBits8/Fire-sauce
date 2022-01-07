@@ -194,15 +194,16 @@ body {
   font-size: 20px;
   padding-top: 20px;
   border: solid 10px rgb(39, 38, 38);
+  color:black;
 }
 .content-text p {
   margin-top: 50px;
 }
 .content-text h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 .content-text h3 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -211,7 +212,7 @@ body {
 }
 
 .logo-firstwefeast {
-  width: 20vw;
+  width: 35vw;
   text-align: center;
 }
 
@@ -221,6 +222,7 @@ body {
 
 .content-pic img {
   margin-top: 20px;
+  width: 15vw
 }
 
 /* CONTENT SLUT */
@@ -246,6 +248,18 @@ body {
   
 }
 /* CONTENT DESCRIPTION SLUT */
+/* CONTENT PRODUCT LOGO */
+.container-product-logo{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  padding-top:60px;
+}
+.content-product-logo img{
+  width: 20vw;
+  
+}
+/* CONTENT PRODUCT LOGO SLUT*/
 
 /* Contact form css */
 
