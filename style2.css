@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-
 h1{
 font-family: 'Bebas Neue', cursive;
 text-align: center;
+}
+
+ul li a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: light;
 }
 
 .grid-container {
