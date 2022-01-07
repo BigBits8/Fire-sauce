@@ -26,5 +26,21 @@ text-align: center;
 }
 
 .grid-item img{
-  width:5vw;
+  width:10vw;
+  height: 350px;
+}
+
+.fixed-bottom {
+  background-color: rgb(6, 102, 14);
+
+}
+
+.footer-container {
+  justify-content: center;
+}
+
+.footer-item {
+  color: white;
+  text-align: center;
+  background-color: yellow;
 }

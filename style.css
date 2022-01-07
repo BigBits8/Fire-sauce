@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sigmar One", cursive;
 }
 
-body{
-  
-  background-color: rgb(240, 222, 179)!important;
+body {
+  background-color: rgb(240, 222, 179) !important;
   /* background-color: rgb(247, 241, 226)!important; */
-
 }
 /* NAVBAR */
 .navbar {
@@ -34,7 +33,8 @@ body{
 .brand-title {
   font-size: 2rem;
   margin: 0.5rem;
-  color:white;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar-links ul {
@@ -56,10 +56,11 @@ body{
   text-decoration: none;
   color: white;
   padding: 1rem;
+  font-family: "Krona One", sans-serif;
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: rgb(66, 63, 63);
 }
 
 .toggle-button {
@@ -81,9 +82,13 @@ body{
 
 .search {
   margin-right: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  sans-serif;
 }
 .search input {
   width: 10vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  sans-serif;
 }
 /* Small screen */
 @media (max-width: 800px) {
@@ -94,6 +99,7 @@ body{
     display: none;
     width: 100%;
   }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -147,6 +153,11 @@ body{
   .search input {
     width: 40vw;
   }
+
+  .grid-item {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
 }
 /* Big screen */
 @media (min-width: 800px) {
@@ -176,43 +187,148 @@ body{
 /* NAVBAR SLUT*/
 
 /* CONTENT */
-.container{
-  margin-top:50px;
+.container {
+  margin-top: 50px;
 }
-.content-text{
+.content-text {
   background-color: rgb(111, 190, 21);
   font-size: 20px;
   padding-top: 20px;
   border: solid 10px rgb(39, 38, 38);
 }
-.content-text p{
+.content-text p {
   margin-top: 50px;
 }
-.content-text h1{
+.content-text h1 {
   font-size: 50px;
 }
-.content-text h3{
+.content-text h3 {
   font-size: 50px;
   text-align: center;
 }
 
-.logo-wrapper{
+.logo-wrapper {
   text-align: center;
 }
 
-.logo-firstwefeast{
+.logo-firstwefeast {
   width: 20vw;
   text-align: center;
 }
 
-.content-pic{
- 
+.content-pic {
   text-align: center;
 }
 
-.content-pic img{
-   margin-top:20px;
+.content-pic img {
+  margin-top: 20px;
 }
 
 /* CONTENT SLUT */
+/* CONTENT DESCRIPTION */
+.container-description{
+  margin-top: 100px;
+}
 
+.content-header-description h1 {
+  font-size: 100px;
+}
+.content-description-text-big{
+  text-align: center;
+  font-size: 50px;
+}
+.content-description-text-small{
+  text-align: center;
+  font-size: 30px;
+}
+
+.description-text {
+  border: 1px solid black;
+  
+}
+/* CONTENT DESCRIPTION SLUT */
+
+/* Contact form css */
+
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 10px;
+}
+
+.form-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.left {
+  height: 100%;
+  background-image: url(images2/chilifire.png);
+  background-size: cover;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.contact-box h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-box h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #47a025;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: grey;
+}
+
+.field:focus{
+  background-color: black;
+}
+
+.btn{
+  width: 100%;
+  padding: 0,5rem 1rem ;
+  font-size: 1.1rem;
+  background-color: green;
+  transition: .3s;
+  color: orange;
+}
+
+.btn:hover{
+  background-color: green;
+}
