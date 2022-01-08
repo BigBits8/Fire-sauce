@@ -27,6 +27,7 @@ body {
 .logo img {
   text-align: center;
   width: 10vw;
+  
 }
 
 .brand-title {
@@ -56,6 +57,12 @@ body {
   color: white;
   padding: 1rem;
   font-family: "Krona One", sans-serif;
+  transition: padding-left 0.5s;
+}
+
+.navbar-links ul li a:hover {
+padding-left: 30px;
+color:rgb(206, 7, 7);
 }
 
 .navbar-links li:hover {
@@ -193,7 +200,8 @@ body {
   background-color: rgb(111, 190, 21);
   font-size: 20px;
   padding-top: 20px;
-  border: solid 10px rgb(39, 38, 38);
+  box-shadow: 5px 10px #44434367;
+  border: solid 10px rgb(3, 3, 3);
   color:black;
 }
 .content-text p {
@@ -209,11 +217,16 @@ body {
 
 .logo-wrapper {
   text-align: center;
+  /* NYTT overflow:hidden; */
+  overflow:hidden;
 }
 
 .logo-firstwefeast {
   width: 35vw;
+  /* NYTT max-width: 100%;*/
+  max-width: 100%;
   text-align: center;
+  
 }
 
 .content-pic {
@@ -236,7 +249,8 @@ body {
 }
 .content-description-text-big{
   text-align: center;
-  font-size: 50px;
+  /* NYTT font-size: 45px;*/
+  font-size: 45px;
 }
 .content-description-text-small{
   text-align: center;
