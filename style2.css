@@ -11,13 +11,39 @@ ul li a {
   font-weight: light;
 }
 
+/* -------Produktsida------- */
+#productBody {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: rgb(111, 190, 21);
+ }
+
+ #productBody h1 {
+   font-size: 1.5rem;
+   margin-top: 15px;
+   
+ }
+
+ #productBody .grid-item {
+   font-size: 0.75rem;
+   
+ }
+
+ #productBody .grid-item img {
+   height: 35%
+   }
+   
+ 
+
 .grid-container {
-  display: grid;
-  grid-column-gap: 10%;
-  grid-template-columns: auto auto auto auto;
+  display:grid;
+  grid-column-gap: 5%;
+  /* grid-template-columns: auto auto auto auto; */
   background-color: white;
   padding: 10px;
   justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
   
 }
 
