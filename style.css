@@ -23,6 +23,7 @@ body {
 }
 .logo {
   text-align: center;
+  
 }
 .logo img {
   text-align: center;
@@ -34,6 +35,7 @@ body {
   margin: 0.5rem;
   color: white;
   text-decoration: none;
+  
 }
 
 .navbar-links ul {
@@ -171,22 +173,29 @@ color:rgb(206, 7, 7);
     position: absolute;
     top: 50%;
     left: 23%;
-    transform: translate(-50%, -50%);
+    transform: translate(110%, -50%);
   }
   .navbar-links ul li .link2 {
     float: none;
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%);
+    transform: translate(20%, -50%);
   }
   .navbar-links ul li .link3 {
     float: none;
     position: absolute;
     top: 50%;
     left: 60%;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
   }
+}
+/* ON HOVER ON SMALL SCREEN-LESS EFFECT */
+@media (min-width: 370px){
+.navbar-links ul li a:hover {
+padding-left: 10px;
+
+}
 }
 
 /* NAVBAR SLUT*/
