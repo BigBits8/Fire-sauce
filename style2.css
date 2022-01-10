@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
 
 h1{
@@ -11,13 +12,53 @@ ul li a {
   font-weight: light;
 }
 
+/* -------Produktsida------- */
+#productBody {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  
+ }
+
+ #productBody h1 {
+   font-size: 2.5rem;
+   margin-top: 4rem;
+   color:rgb(155, 5, 5);
+   font-family: Montserrat Subrayada;
+   font-weight: bold;
+ }
+
+ #productBody .grid-item {
+   font-size: 0.75rem;
+   background-color: rgb(240, 222, 179);
+  
+   
+ }
+
+ #productBody .grid-item img {
+   height: 35%
+   }
+
+   #productBody .grid-item h1 {
+    border-bottom: 5px solid red;
+    font-weight: normal;
+   }
+
+   #productBody .grid-container {
+     background-color:  rgb(6, 102, 14);
+     border: 5px solid red;
+   }
+   
+ 
+
 .grid-container {
-  display: grid;
-  grid-column-gap: 10%;
-  grid-template-columns: auto auto auto auto;
+  display:grid;
+  grid-column-gap: 1%;
+  /* grid-template-columns: auto auto auto auto; */
   background-color: white;
   padding: 10px;
   justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
   
 }
 
@@ -29,22 +70,67 @@ ul li a {
   text-align: center;
 }
 
-.grid-item img{
-  width:10vw;
-  height: 350px;
+
+
+
+
+
+/*footer*/
+
+.footer1 {
+  width: 100%;
+ 
+  bottom: 5px;
 }
 
-.fixed-bottom {
+.copy {
+  color: white;
+  justify-content: center;
+  display: flex;
   background-color: rgb(6, 102, 14);
-
+  padding-bottom: 10px;
 }
 
 .footer-container {
-  justify-content: center;
+  background-color: rgb(6, 102, 14);
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer-item {
+.footer-container > div {
+  background-color: rgb(6, 102, 14);
   color: white;
+  width: 300px;
+  height: 150px;
+  margin: 30px;
   text-align: center;
-  background-color: yellow;
+  padding: 5px;
 }
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  list-style-type: none;
+}
+
+@media (max-width: 700px) {
+  .footer-container > div {
+    background-color: rgb(6, 102, 14);
+    width: 200px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer a {
+    align-items: center;
+  }
+  .footer1 {
+    position: relative;
+  }
+}
+
+

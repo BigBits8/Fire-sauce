@@ -32,32 +32,25 @@
             </ul>
             <div class="search">
                 <input type="text" placeholder="Sök" name="search">
-                <button type="submit">Sök</button>
+                <button type="button">Sök</button>
             </div>
         </div>
     </nav>
-
-
-    <h1>Contact info</h1>
-    <h2>Ringvägen 103, 111 33, Stockholm</h2>
-    <h2>Telefonnummer: 08-555 442</h2>
-    <h3>Email: info@firesauce.com </h3>
-    <h3>Kontaktperson: Greta Schulman</h3>
-
-
 
     <div class="form-container">
         <div class="contact-box">
             <div class="left"></div>
                 <div class="right">
-                    <h2>Contact us</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="email" class="field" placeholder="Your Email">
-                    <input type="text" class="field" placeholder="Your Phone number">
-                    <textarea class="field" placeholder="Input Message"></textarea>
-                    <button class="btn">Send</button>
+                    <h2>Kontakta oss</h2>
+                    <input type="text" class="field" id="namn" placeholder="Namn">
+                    <input type="email" class="field" id="email" placeholder="Email">
+                    <input type="text" class="field" id="mobil" placeholder="Telefonnummer">
+                    <textarea class="field" placeholder="Medelande" id="msg"></textarea>
+                    <button class="button" onclick="Submit()">Skicka</button>
                 </div>       
             </div>
         </div>
+
+        <script src="contact.js"></script>
 </body>
 </html>
