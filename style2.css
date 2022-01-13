@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
 
 h1{
 font-family: 'Bebas Neue', cursive;
@@ -13,14 +22,13 @@ ul li a {
 }
 
 /* -------Produktsida------- */
-#productBody {
-  
- }
+
 
  #products {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
+  
  }
 
  #productBody h1 {
@@ -33,7 +41,7 @@ ul li a {
 
  #productBody .grid-item {
    font-size: 0.75rem;
-   background-color: rgb(240, 222, 179);
+   background-color: white;
   
    
  }
@@ -48,7 +56,7 @@ ul li a {
    }
 
    #productBody .grid-container {
-     background-color:  rgb(6, 102, 14);
+     /* background-color:  rgb(6, 102, 14); */
      border: 5px solid red;
    }
    
@@ -62,7 +70,6 @@ ul li a {
   padding: 10px;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  
 }
 
 .grid-item {

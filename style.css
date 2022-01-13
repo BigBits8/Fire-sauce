@@ -2,16 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: rgb(240, 222, 179) !important;
-  /* background-color: rgb(247, 241, 226)!important; */
-}
 /* NAVBAR */
 .navbar {
   font-family: "Sigmar One", cursive;
