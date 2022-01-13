@@ -14,10 +14,13 @@ ul li a {
 
 /* -------Produktsida------- */
 #productBody {
+  
+ }
+
+ #products {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
-  
  }
 
  #productBody h1 {
@@ -70,8 +73,13 @@ ul li a {
   text-align: center;
 }
 
+#more {display: none;}
 
+#more1 {display: none;}
 
+#more2 {display: none;}
+
+#more3 {display: none;}
 
 
 

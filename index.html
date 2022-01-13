@@ -18,64 +18,80 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images2/chilifire.png"></a>
-            <div class="brand-title ">Fire sauce</div>
+    <nav class="navbar row">
+        <div class="col-lg-4 d-flex">
+            <div class="logo col-lg-4">
+                <a href="index.html"><img src="images2/chilifire.png"></a>
+            </div>
+            <div class="brand-title col-lg-6">
+                <p>Fire sauce</p>
+            </div>
+            <!-- Flytta toggle-button inom div och styla med width:40px-->
+            <a href="#" class="toggle-button ">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
         </div>
     
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links ">
+        <div class="navbar-links col-lg-2">
             <ul>
                 <li><a class="link1" href="index.html">Hem</a></li>
                 <li><a class="link2" href="products.html">Alla produkter</a></li>
                 <li><a class="link3" href="contact info.html">Kontakt</a></li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="Sök" name="search">
+                <input type="text" placeholder="Sök produkter" name="search">
                 <button type="submit">Sök</button>
             </div>
         </div>
     </nav>
+    </nav>
     <div class="container">
         <div class="content row">
-            <div class="content-text col-lg-6">
-                <h1>Stark och fruktig</h1>
-                <h3 style="font-weight: 700;">Nyhet</h3>
-                
-                <h3 style="color:rgb(228, 207, 17)">The General's Hot Sauce</h3>
-                <div class="logo-wrapper">
-                    <img class="logo-firstwefeast" src="images2/Logo_gen.png">
+            <div class="container-description">
+                <div class="content-header-description row d-flex justify-content-center">
+                    <h1>Heta såser för alla</h1>
+                    <p class="content-description-text-big col-lg-12">Välkommna till såsarnas palats, hitta dina smaker från
+                        världen
+                        över</p>
+                    <p class="content-description-text-small col-lg-12">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Sunt perspiciatis
+                        velit fugiat quibusdam.</p>
                 </div>
+            </div>
+            <div class="container-product-logo row">
+                <div class="content-product-logo col-lg-4">
+                    <img src="images2/santa-maria.png">
                 </div>
-        
-        <div class="container-description">
-            <div class="content-header-description row d-flex justify-content-center">
-                <h1>Heta såser för alla</h1>
-                <p class="content-description-text-big col-lg-12">Välkommna till såsarnas palats, hitta dina smaker från
-                    världen
-                    över</p>
-                <p class="content-description-text-small col-lg-12">Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Sunt perspiciatis
-                    velit fugiat quibusdam.</p>
+                <div class="content-product-logo col-lg-4">
+                    <img src="images2/RedHot-logo.com.png">
+                </div>
+                <div class="content-product-logo col-lg-4">
+                    <img src="images2/poppamies-logo.png">
+                </div>
             </div>
-        </div>
-        <div class="container-product-logo row">
-            <div class="content-product-logo col-lg-4">
-                <img src="images2/santa-maria.png">
             </div>
-            <div class="content-product-logo col-lg-4">
-                <img src="images2/RedHot-logo.com.png">
+            <div class="row">
+                <div class="content-text col-lg-6">
+                    <h1>Stark och fruktig</h1>
+                    <h3 style="font-weight: 700;">Nyhet</h3>
+            
+                    <h3 style="color:rgb(228, 207, 17)">The General's Hot Sauce</h3>
+                    <div class="logo-wrapper">
+                        <img class="logo-firstwefeast" src="images2/Logo_gen.png">
+                    </div>
+                    <!-- Lägg till p med text -->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur minus, facilis assumenda nihil
+                        asperiores, veritatis vel, fugiat at itaque nemo non maxime amet dolor quas. Exercitationem corrupti ipsa
+                        inventore.</p>
+                </div>
+                <div class="content-pic col-lg-6">
+                    <img src="images2/The General sauce test.png">
+            
+                </div>
             </div>
-            <div class="content-product-logo col-lg-4">
-                <img src="images2/poppamies-logo.png">
-            </div>
-        </div>
         
         
     </div>
@@ -91,7 +107,7 @@
             Telefonnummer: 08-555 442 <br>
             Email: info@firesauce.com
             
-</p>
+    </p>
         </div>
         <div class="footer">
             <h3>Om företaget</h3>
