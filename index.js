@@ -1,3 +1,6 @@
+
+
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -68,3 +71,106 @@ function readMoreRedHot() {
         moreText3.style.display = "inline";
     }
 }
+
+
+
+
+
+const characterList = document.getElementById('charactersList');
+const searchBar = document.getElementById('searchBar');
+let products = [];
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase()
+    const filteredNames = products.filter(db =>{
+        return db.name.toLowerCase().includes(searchString)
+});
+    displayCharacters(filteredNames);
+});
+
+
+
+const loadCharacters = () =>{
+    products = db;
+    displayCharacters(products);
+    console.log(displayCharacters);
+}
+
+
+const displayCharacters = (products) => {
+    const htmlString = products.map((db) => {
+    
+    return `
+        <div class="grid-item"> 
+            <img src = "${db.img}">
+            <h1>${db.name}</h1>
+            <p>${db.info}</p>
+            <p>
+            <button onclick="readMoreCaribbean()" id="myBtn">Read more</button>
+
+        </div>
+    `;
+    })
+    .join('');
+    characterList.innerHTML = htmlString;
+}
+loadCharacters();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+let products = pl;
+
+const displayProducts = (products) => {
+    const products = pl[i];
+    const htmlString = products.map((products) => {
+        return `
+        <li class>
+        </li>
+        `;
+    })
+}
+let gridPrintOut = document.querySelector(".grid-container");
+
+getGridOutput();
+function getGridOutput() {
+let productList = ``;
+  for (let i = 0; i < pl.length; i++) {
+    const product = pl[i];
+
+    productList += `
+        <div class = "grid-item">
+        <img src="${product.img}">
+        <h1>${product.name}</h1>
+        <a href="demo" " class="btn btn-primary" data-bs-toggle="collapse">More Info</a>
+        <div id="demo" class="collapse">${product.info}</div>
+        </div>
+
+        `;
+  }
+  gridPrintOut.innerHTML = productList;
+    console.log(productList);
+} */

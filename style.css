@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
 /* NAVBAR */
 .navbar {
-  font-family: "Sigmar One", cursive;
+  font-family: Montserrat Subrayada;
   display: flex;
   align-items: center;
   /* background-color: rgb(67, 155, 74); */
-  background-color: rgb(6, 102, 14);
+  background-color: black;
   color: white;
 }
 .logo {
@@ -19,6 +19,13 @@
 .logo img {
   text-align: center;
   width: 7vw;
+}
+
+#logoText {
+ padding-top: 0.5em;
+ color:#c70a1d;
+ /* text-shadow: -1px -2px 1px #a8cca5; */
+ font-weight: bolder;
 }
 
 .brand-title {
@@ -48,7 +55,8 @@
   text-decoration: none;
   color: white;
   padding: 1rem;
-  font-family: "Krona One", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   transition: padding-left 0.5s;
 }
 
