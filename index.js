@@ -76,28 +76,28 @@ function readMoreRedHot() {
 
 
 
-const characterList = document.getElementById('charactersList');
+const productList = document.getElementById('charactersList');
 const searchBar = document.getElementById('searchBar');
 let products = [];
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase()
-    const filteredNames = products.filter(db =>{
+    const filteredProducts = products.filter(db =>{
         return db.name.toLowerCase().includes(searchString)
 });
-    displayCharacters(filteredNames);
+    displayProducts(filteredProducts);
 });
 
 
 
-const loadCharacters = () =>{
+const loadProducts = () =>{
     products = db;
-    displayCharacters(products);
-    console.log(displayCharacters);
+    displayProducts(products);
+    console.log(displayProducts);
 }
 
 
-const displayCharacters = (products) => {
+const displayProducts = (products) => {
     const htmlString = products.map((db) => {
     
     return `
@@ -105,16 +105,15 @@ const displayCharacters = (products) => {
             <img src = "${db.img}">
             <h1>${db.name}</h1>
             <p>${db.info}</p>
-            <p>
-            <button onclick="readMoreCaribbean()" id="myBtn">Read more</button>
+            ${db.button}
 
         </div>
     `;
     })
     .join('');
-    characterList.innerHTML = htmlString;
+    productList.innerHTML = htmlString;
 }
-loadCharacters();
+loadProducts();
 
 
 

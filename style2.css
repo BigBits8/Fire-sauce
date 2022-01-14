@@ -101,22 +101,27 @@ ul li a {
   bottom: 5px;
 }
 
+#footerlogo {
+font-family: Montserrat Subrayada;
+color:#c70a1d;
+}
+
 .copy {
   color: white;
   justify-content: center;
   display: flex;
-  background-color: rgb(155, 5, 5);
+  background-color: black;
   padding-bottom: 10px;
 }
 
 .footer-container {
-  background-color: rgb(155, 5, 5);
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer-container > div {
-  background-color: rgb(155, 5, 5);
+  background-color: black;
   color: white;
   width: 300px;
   height: 150px;
@@ -136,7 +141,7 @@ ul li a {
 
 @media (max-width: 700px) {
   .footer-container > div {
-    background-color: rgb(6, 102, 14);
+    background-color: black;
     width: 200px;
   }
   .footer-container {
