@@ -199,27 +199,37 @@ padding-left: 10px;
 /* NAVBAR SLUT*/
 
 /* CONTENT */
-
 .container {
+  display:flex;
   margin-top: 50px;
 }
 .content-text {
-  background-color: rgb(111, 190, 21);
+  /* background-color: rgb(153, 190, 21); */
+  margin-right: 40px;
+  /* background-color: rgb(160, 75, 42); */
+  background-color: rgb(196, 87, 44);
   font-size: 20px;
   padding-top: 20px;
   box-shadow: 5px 10px #44434367;
-  border: solid 10px rgb(3, 3, 3);
+  /* border: solid 5px rgb(3, 3, 3); */
   color:black;
+  border-radius: 10px 100px 0px 100px;
 }
 .content-text p {
+  padding:40px;
   margin-top: 50px;
 }
 .content-text h1 {
+  font-family: 'Acme', sans-serif;
   font-size: 70px;
 }
 .content-text h3 {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
+}
+.colored-text{
+  font-family: Montserrat Subrayada!important;
+  color:#FEBE0B;
 }
 
 .logo-wrapper {
@@ -229,6 +239,7 @@ padding-left: 10px;
 }
 
 .logo-firstwefeast {
+  
   width: 35vw;
   /* NYTT max-width: 100%;*/
   max-width: 100%;
@@ -238,6 +249,11 @@ padding-left: 10px;
 
 .content-pic {
   text-align: center;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 5px 10px #44434367;
+  /* border: solid 5px rgb(1, 3, 3); */
+  color:black;
+  border-radius: 100px 10px 100px 0px;
 }
 
 .content-pic img {
