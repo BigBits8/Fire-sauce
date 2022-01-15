@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="JS2Grupparbete/style.css">
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,61 +16,83 @@
     <title>Fire Products</title>
 </head>
 <body id="productBody">
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images2/chilifire.png"></a>
-            <div class="brand-title ">Fire sauce</div>
+    <nav class="navbar row">
+        <div class="col-lg-4 d-flex">
+            <div class="logo col-lg-4">
+                <a href="index.html"><img src="images2/Logga.png"></a>
+            </div>
+                <div class="brand-title col-lg-6">
+                <p id="logoText">Fire sauce</p> 
+                </div>
+                 <!-- Flytta toggle-button inom div och styla med width:40px-->
+                    <a href="#" class="toggle-button ">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    </a>
         </div>
-
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links ">
+    
+        <div class="navbar-links col-lg-2">
             <ul>
                 <li><a class="link1" href="index.html">Hem</a></li>
                 <li><a class="link2" href="products.html">Alla produkter</a></li>
                 <li><a class="link3" href="contact info.html">Kontakt</a></li>
+                <li><h3>Sök produkter</h3>
+                    <div id="searchWrapper">
+                        <input type="text" name="seachBar" id="searchBar" placeholder="search name">
+                    </div></li>
             </ul>
-            <div class="search">
-                <input type="text" placeholder="Sök" name="search">
-                <button type="submit">Sök</button>
+           
             </div>
-        </div>
+        </nav>
     </nav>
-    <script src="index.js"></script>
-</nav>
-
+   
+    </nav>
+    
     <h1>Fire Products</h1>
-    <div class="grid-container">
+
+    <div class="container">
+        
+    
+       
+    </div>
+
+<section id="products">
+    
+    <div class="grid-container" id="charactersList">
         
   
-  <div class="grid-item"><img src="images2/caribbean-hot-sauce-chillisas.png" alt="caribbean-hot-sauce">
+ <!--  <div class="grid-item"><img src="images2/caribbean-hot-sauce-chillisas.png" alt="caribbean-hot-sauce">
 <h1>Caribbean hot sauce</h1>
-<p>Många trodde att de var de 7 haven som till slut tog kål på piraterna. Men få vet sanningen bakom det som blev döden för röverierna: Caribbean hot sauce. Om döden hade en andedräkt, om djävulen hade blod i sina ådror, om Captain Marvel svettades, skulle de alla smaka som Caribbean.</p>
+<p>Många trodde att de var de 7 haven som till slut tog kål på piraterna.<span id="dots">...</span><span id="more">Men få vet sanningen bakom det som blev döden för röverierna: Caribbean hot sauce. Om döden hade en andedräkt, om djävulen hade blod i sina ådror, om Captain Marvel svettades, skulle de alla smaka som Caribbean.</span> </p>
 <p>&#128293; &#128293; &#128293; &#128293; &#128293;</p>
+<button onclick="readMoreCaribbean()" id="myBtn">Read more</button>
 </div>
+
   <div class="grid-item"><img src="images2/Taco sauce.png" alt="taco sauce">
 <h1>Taco sauce</h1>
-<p>För den svage som hatar utmaningar. Denna mesige klassiker är för medelmåttan som aldrig pushar sina gränser. En mes-sås vars enda syfte är att låta magen vila mellan chilihöjdarna.</p>
+<p>För den svage som hatar utmaningar.<span id="dots1">...</span><span id="more1"> Denna mesige klassiker är för medelmåttan som aldrig pushar sina gränser. En mes-sås vars enda syfte är att låta magen vila mellan chilihöjdarna.</span> </p>
 <p>&#128293;</p>
+<button onclick="readMoreTaco()" id="myBtn1">Read more</button>
 </div>
+
   <div class="grid-item"><img src="images2/The General sauce test.png" alt="General hotsauce">
     <h1>The General</h1>
-    <p>En hög höjdare när du vill tappa känseln i munnen inför en krogrunda. I denna finner du 3 chilisorter i ett hemligt recept som kommer få din sambo att flytta ut. En av våra favoriter här på Fire Sauce!</p>
+    <p>En hög höjdare när du vill tappa känseln i munnen inför en krogrunda.<span id="dots2">...</span><span id="more2"> I denna finner du 3 chilisorter i ett hemligt recept som kommer få din sambo att flytta ut. En av våra favoriter här på Fire Sauce!</span> </p>
 <p>&#128293; &#128293; &#128293;</p>
+<button onclick="readMoreGeneral()" id="myBtn2">Read more</button>
 </div>
+
   <div class="grid-item"><img src="images2/Red Hot.png" alt="Red Hot">
 <h1>Red Hot</h1>
-<p>En smakrik champion på den internationella marknaden. Red Hot innehåller både mango och jordgubbe för att förhöja hetta, speciellt till kött. Receptet är något av det bästa vi sett som ger dig en rik smakupplevelse och ett vattenfall till tårkanaler.</p>
+<p>En smakrik champion på den internationella marknaden.<span id="dots3">...</span><span id="more3"> Red Hot innehåller både mango och jordgubbe för att förhöja hetta, speciellt till kött. Receptet är något av det bästa vi sett som ger dig en rik smakupplevelse och ett vattenfall till tårkanaler.</span></p>
 <p>&#128293; &#128293; &#128293; &#128293;</p>
+<button onclick="readMoreRedHot()" id="myBtn3">Read more</button>
+</div> -->
+
 </div>
-
-  
-</div>
-
-
-
+</section>
+<script src="productList.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
