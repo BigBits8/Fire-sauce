@@ -21,46 +21,48 @@
     <nav class="navbar row">
         <div class="col-lg-4 d-flex">
             <div class="logo col-lg-4">
-                
-                    <a href="index.html"><img src="images2/Logga.png"></a>
-              
+                <a href="index.html"><img src="images2/Logga.png"></a>
             </div>
-                <div class="brand-title col-lg-6">
+            <div class="brand-title col-lg-6">
                 <p id="logoText">Fire sauce</p>
-                </div>
-                 <!-- Flytta toggle-button inom div och styla med width:40px-->
-                    <a href="#" class="toggle-button ">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    </a>
+            </div>
+
+            <a href="#" class="toggle-button ">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
         </div>
-    
+
         <div class="navbar-links col-lg-2">
             <ul>
                 <li><a class="link1" href="index.html">Hem</a></li>
                 <li><a class="link2" href="products.html">Alla produkter</a></li>
                 <li><a class="link3" href="contact info.html">Kontakt</a></li>
             </ul>
-            
-            </div>
-        </nav>
+        </div>
     </nav>
 
     <div class="container">
         <div class="content ">
+            <!-- RUBRIK -->
             <div class="container-description row">
                 <div class="content-header-description row d-flex justify-content-center">
                     <h1>Heta såser för alla</h1>
-                    <p class="content-description-text-big col-lg-12">Välkommna till såsernas palats, hitta dina smaker från
+                    <p class="content-description-text-big col-lg-12">Välkommna till såsernas palats, hitta dina smaker
+                        från
                         världen
                         över</p>
-                    <p class="content-description-text-small col-lg-12">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    <p class="content-description-text-small col-lg-12">Lorem, ipsum dolor sit amet consectetur
+                        adipisicing
                         elit.
                         Sunt perspiciatis
                         velit fugiat quibusdam.</p>
                 </div>
             </div>
+            <!-- RUBRIK SLUT-->
+            <hr>
+            <!-- MÄRKEN PÅ SÅSER -->
             <div class="container-product-logo row">
                 <div class="content-product-logo col-lg-4">
                     <img src="images2/santa-maria.png">
@@ -72,55 +74,140 @@
                     <img src="images2/poppamies-logo.png">
                 </div>
             </div>
+            <!-- MÄRKEN PÅ SÅSER SLUT-->
+            <hr>
+            <!--  -->
+            <div class="container-level">
+                <div class="content-level">
+                    <div class="content-level-hot">
+                        <div class="d-flex justify-content-center">
+                            <p id="header-text">Välj några av våra starkaste såser</p>
+                        </div>
+                        <header class="content-level-hot-header">
+                            <h1>Extra Stark</h1>
+                        </header>
+
+                        <div id="row-product-index" class="row">
+                            <div id="container-product-index" class="grid-item col-lg-6"><img
+                                    src="images2/caribbean-hot-sauce-chillisas.png" alt="caribbean-hot-sauce">
+                                <div id="product-index">
+                                    <h1>Caribbean hot sauce</h1>
+                                    <p>Många trodde att de var de 7 haven som till slut tog kål på piraterna.<span
+                                            id="dots">...</span><span id="more">Men
+                                            få vet sanningen bakom det som blev döden för röverierna: Caribbean hot
+                                            sauce. Om döden hade
+                                            en andedräkt, om djävulen hade blod i sina ådror, om Captain Marvel
+                                            svettades, skulle de alla smaka som
+                                            Caribbean.</span> </p>
+                                    <p>&#128293; &#128293; &#128293; &#128293; &#128293;</p>
+                                    <button onclick="readMoreCaribbean()" id="myBtn">Read more</button>
+                                </div>
+
+                            </div>
+                            <div id="container-product-index" class="grid-item col-lg-6"><img src="images2/Red Hot.png"
+                                    alt="Red Hot">
+                                <div id="product-index">
+                                    <h1>Red Hot</h1>
+                                    <p>En smakrik champion på den internationella marknaden.<span
+                                            id="dots3">...</span><span id="more3"> Red Hot
+                                            innehåller både mango och jordgubbe för att förhöja hetta, speciellt till
+                                            kött. Receptet är något av det
+                                            bästa vi sett som ger dig en rik smakupplevelse och ett vattenfall till
+                                            tårkanaler.
+                                        </span></p>
+                                    <p>&#128293; &#128293; &#128293; &#128293; &#128293;</p>
+                                    <button onclick="readMoreRedHot()" id="myBtn3">Read more</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-level">
+                    <div class="content-level-medium">
+                        <div class="d-flex justify-content-center">
+                            <p id="header-text">...Eller några av våra svagaste</p>
+                        </div>
+                        <header class="content-level-medium-header">
+                            <h1>Medium Stark</h1>
+                        </header>
+
+                        <div id="row-product-index" class="row">
+                            <div id="container-product-index" class="grid-item col-lg-6"><img
+                                    src="images2/The General sauce test.png" alt="General hotsauce">
+                                <div id="product-index">
+                                    <h1>The General</h1>
+                                    <p>En hög höjdare när du vill tappa känseln i munnen inför en krogrunda.<span
+                                            id="dots2">...</span><span id="more2"> I
+                                            denna finner du 3 chilisorter i ett hemligt recept som kommer få din sambo
+                                            att flytta ut. En av våra favoriter
+                                            här på Fire Sauce!</span> </p>
+                                    <p>&#128293; &#128293; &#128293;</p>
+                                    <button onclick="readMoreGeneral()" id="myBtn2">Read more</button>
+                                </div>
+
+                            </div>
+                            <div id="container-product-index" class="grid-item col-lg-6"><img
+                                    src="images2/Taco sauce.png" alt="Red Hot">
+                                <div id="product-index">
+                                    <h1>Taco sauce</h1>
+                                    <p>För den svage som hatar utmaningar.<span id="dots1">...</span><span id="more1">
+                                            Denna mesige klassiker är för
+                                            medelmåttan som aldrig pushar sina gränser. En mes-sås vars enda syfte är
+                                            att låta magen vila mellan
+                                            chilihöjdarna.</span> </p>
+                                    <p>&#128293;</p>
+                                    <button onclick="readMoreTaco()" id="myBtn1">Read more</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="content-text col-lg-5">
-            <div class="logo-wrapper">
-                <img class="logo-firstwefeast" src="images2/Logo_gen.png">
-            </div>
-            <h1 class="colored-text">Stark och fruktig</h1>
-            <!-- Lägg till p med text -->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur minus, facilis assumenda nihil
-                asperiores, veritatis vel, fugiat at itaque nemo non maxime amet dolor quas. Exercitationem corrupti ipsa
-                inventore.</p>
+            <!--  -->
         </div>
-        <div class="content-pic col-lg-5">
-            <img src="images2/The General sauce test.png">
+        <hr>
+        <!-- REKLAM GENERAL SAUCE -->
+        
+        
+        <!-- REKLAM GENERAL SAUCE SLUT-->
+    </div>
     
-        </div>
-    </div>
+    
 
+    <footer class=footer1>
+        <div class="footer-container">
+            <div class="footer">
+                <h3 id="footerlogo">Fire sauce</h3>
+                <p>Ringvägen 103, 111 33, Stockholm
+                    Telefonnummer: 08-555 442 <br>
+                    Email: info@firesauce.com
+
+                </p>
+            </div>
+            <div class="footer">
+                <h3>Om företaget</h3>
+                <p>Firesauce har de starkaste såserna ifrån hela världen, upptäck din favorit idag bland vårt breda
+                    sortiment </p>
+            </div>
+            <div class="footer">
+                <h3>Länkar</h3>
+                <ul>
+                    <li class="links"><a href="">Facebook</a></li>
+                    <li class="links"><a href="">Instagram</a></li>
+                    <li class="links"><a href="">Kontakta oss</a></li>
+                    <li class="links"><a href="">Produkter</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="copy">2022 Fire sauce Copywright </div>
+    </footer>
+    <script src="productList.js"></script>
     <script src="index.js"></script>
-
-
-<footer class=footer1>
-    <div class="footer-container">
-        <div class="footer">
-            <h3 id="footerlogo">Fire sauce</h3>
-            <p>Ringvägen 103, 111 33, Stockholm
-            Telefonnummer: 08-555 442 <br>
-            Email: info@firesauce.com
-            
-    </p>
-        </div>
-        <div class="footer">
-            <h3>Om företaget</h3>
-            <p>Firesauce har de starkaste såserna ifrån hela världen, upptäck din favorit idag bland vårt breda sortiment </p>
-        </div>
-        <div class="footer">
-            <h3>Länkar</h3>
-            <ul>
-                <li class="links"><a href="">Facebook</a></li>
-                <li class="links"><a href="">Instagram</a></li>
-                <li class="links"><a href="">Kontakta oss</a></li>
-                <li class="links"><a href="">Produkter</a></li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="copy">2022 Fire sauce Copywright </div>
-</footer>
-</html>
 </body>
+
+</html>

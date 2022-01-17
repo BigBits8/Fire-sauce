@@ -146,6 +146,11 @@ color:rgb(206, 7, 7);
     color: white;
     padding: 1rem;
   }
+  .navbar-links ul li .link4 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
 
   .search {
     text-align: center;
@@ -177,14 +182,21 @@ color:rgb(206, 7, 7);
     float: none;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 35%;
     transform: translate(20%, -50%);
   }
   .navbar-links ul li .link3 {
     float: none;
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 48%;
+    transform: translate(50%, -50%);
+  }
+  .navbar-links ul li .link4 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 58%;
     transform: translate(50%, -50%);
   }
 }
@@ -285,6 +297,60 @@ padding-left: 10px;
   
 }
 /* CONTENT DESCRIPTION SLUT */
+/* CONTENT HOT-MEDIUM  */
+.container-level {
+  /* background-color: rgba(214, 135, 31, 0.299); */
+  margin-bottom: 100px;
+}
+.content-level-hot-header {
+  background-color: rgba(115, 11, 11, 0.918);
+  border-radius: 10px;
+  margin: 50px;
+}
+.content-level-hot-header h1 {
+  color: black;
+}
+#header-text {
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  color: #212529;
+}
+
+.content-level-medium {
+  margin: 50px;
+}
+
+.content-level-medium-header {
+  background-color: rgba(25, 115, 11, 0.925);
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.content-level-medium-header h1 {
+  color: black;
+}
+
+/* CONTENT HOT-MEDIUM  SLUT*/
+
+/* CONTENT-LEVEL OF SPICY */
+#row-product-index {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#container-product-index {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+#product-index {
+  width: 100%;
+  text-align: center;
+}
+
+
+
 /* CONTENT PRODUCT LOGO */
 .container-product-logo{
   display:flex;

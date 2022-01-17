@@ -1,6 +1,5 @@
 
 
-
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -106,6 +105,8 @@ const displayProducts = (products) => {
             <h1>${db.name}</h1>
             <p>${db.info}</p>
             ${db.button}
+            ${db.buttonBuy}
+            <p>${db.price}</p>
 
         </div>
     `;
@@ -114,28 +115,6 @@ const displayProducts = (products) => {
     productList.innerHTML = htmlString;
 }
 loadProducts();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
