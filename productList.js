@@ -8,7 +8,7 @@ const db = [
     rating: "&#128293; &#128293; &#128293; &#128293; &#128293;",
     price: "100kr",
     button: "<button id= 'myBtn' onclick = readMoreCaribbean()>Read more</button>",
-    buttonBuy: "<button id= 'addToCart' onclick = addToCart()>Köp</button>"
+    buttonBuy: "<button id= 'addToCart' onclick = addToCart(0)>Köp</button>"
 
 },
 {
@@ -18,7 +18,7 @@ const db = [
     rating: "&#128293;",
     price: "50kr",
     button: "<button id='myBtn1' onclick = readMoreTaco()>Read more</button>",
-    buttonBuy: "<button id= 'addToCart' onclick = addToCart()>Köp</button>"
+    buttonBuy: "<button id= 'addToCart' onclick = addToCart(1)>Köp</button>"
 },
 {
     img: "images2/The General sauce test.png",
@@ -27,7 +27,7 @@ const db = [
     rating: "&#128293; &#128293; &#128293;",
     price: "150kr" ,
     button: "<button id='myBtn2' onclick = readMoreGeneral()>Read More</button>",
-    buttonBuy: "<button id= 'addToCart' onclick = addToCart()>Köp</button>"
+    buttonBuy: "<button id= 'addToCart' onclick = addToCart(2)>Köp</button>"
     
 },
 {
@@ -37,15 +37,10 @@ const db = [
     rating: "&#128293; &#128293; &#128293; &#128293;",
     price: "85kr" ,
     button: "<button id='myBtn3' onclick = readMoreRedHot()>Read More</button>",
-    buttonBuy: "<button id= 'addToCart' onclick = addToCart()>Köp</button>"
+    buttonBuy: "<button id= 'addToCart' onclick = addToCart(3)>Köp</button>"
 }
 ]
 
 
 
-const cartItems = [
-{
-    name: "placeholder",
-    price: "placeholder" 
-}
-]
+const cartItems = []

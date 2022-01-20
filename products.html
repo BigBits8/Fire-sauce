@@ -13,6 +13,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     
+    
+
     <title>Fire Products</title>
 </head>
 <body id="productBody">
@@ -31,24 +33,51 @@
                     <span class="bar"></span>
                     </a>
         </div>
-    
+
+
         <div class="navbar-links col-lg-2">
             <ul>
                 <li><a class="link1" href="index.html">Hem</a></li>
                 <li><a class="link2" href="products.html">Alla produkter</a></li>
                 <li><a class="link3" href="contact info.html">Kontakt</a></li>
-                <li><a class="link4" href="shoppingCart.html">Varukorg</a></li>
-                <li><h3>Sök produkter</h3>
+                <li><button onclick="btnShowCart()" class="link4" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; background-color: black; border: none;" >Varukorg</button> <span style="background-color: brown; border-radius: 50%; padding-left: 6px; padding-right: 6px; padding-top: 2px; padding-bottom: 2px;  left: 67.3%; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="badgeNumber" class="link4">0</span></li>
+
+                <li><h3 style="font-size: 0.75rem; font-family: Verdana, Geneva, Tahoma, sans-serif;" >Sök produkter</h3>
                     <div id="searchWrapper">
-                        <input type="text" name="seachBar" id="searchBar" placeholder="search name">
+                        <input style="font-size: 0.75rem; font-family: Verdana, Geneva, Tahoma, sans-serif;" type="text" name="seachBar" class="link5" id="searchBar" placeholder="Sök Produkt">
                     </div></li>
             </ul>
            
             </div>
         </nav>
-    </nav>
-   
-    </nav>
+
+        <title>Fire Cart</title>
+</head>
+
+    <div class="container-fluid" id="shoppingCart">
+        <div class=row-view id="view-cart">
+            <div class="col-10 offset-1">
+                <h3 class="display-4 m-4">Varukorg</h3>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Produkt</th>
+                                    <th>Pris</th>
+                                    <th>Kvantitet</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cartTableBody">
+                                    
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
     
     <h1>Fire Products</h1>
 
@@ -62,37 +91,13 @@
     
     <div class="grid-container" id="charactersList">
         
-  
- <!--  <div class="grid-item"><img src="images2/caribbean-hot-sauce-chillisas.png" alt="caribbean-hot-sauce">
-<h1>Caribbean hot sauce</h1>
-<p>Många trodde att de var de 7 haven som till slut tog kål på piraterna.<span id="dots">...</span><span id="more">Men få vet sanningen bakom det som blev döden för röverierna: Caribbean hot sauce. Om döden hade en andedräkt, om djävulen hade blod i sina ådror, om Captain Marvel svettades, skulle de alla smaka som Caribbean.</span> </p>
-<p>&#128293; &#128293; &#128293; &#128293; &#128293;</p>
-<button onclick="readMoreCaribbean()" id="myBtn">Read more</button>
-</div>
-
-  <div class="grid-item"><img src="images2/Taco sauce.png" alt="taco sauce">
-<h1>Taco sauce</h1>
-<p>För den svage som hatar utmaningar.<span id="dots1">...</span><span id="more1"> Denna mesige klassiker är för medelmåttan som aldrig pushar sina gränser. En mes-sås vars enda syfte är att låta magen vila mellan chilihöjdarna.</span> </p>
-<p>&#128293;</p>
-<button onclick="readMoreTaco()" id="myBtn1">Read more</button>
-</div>
-
-  <div class="grid-item"><img src="images2/The General sauce test.png" alt="General hotsauce">
-    <h1>The General</h1>
-    <p>En hög höjdare när du vill tappa känseln i munnen inför en krogrunda.<span id="dots2">...</span><span id="more2"> I denna finner du 3 chilisorter i ett hemligt recept som kommer få din sambo att flytta ut. En av våra favoriter här på Fire Sauce!</span> </p>
-<p>&#128293; &#128293; &#128293;</p>
-<button onclick="readMoreGeneral()" id="myBtn2">Read more</button>
-</div>
-
-  <div class="grid-item"><img src="images2/Red Hot.png" alt="Red Hot">
-<h1>Red Hot</h1>
-<p>En smakrik champion på den internationella marknaden.<span id="dots3">...</span><span id="more3"> Red Hot innehåller både mango och jordgubbe för att förhöja hetta, speciellt till kött. Receptet är något av det bästa vi sett som ger dig en rik smakupplevelse och ett vattenfall till tårkanaler.</span></p>
-<p>&#128293; &#128293; &#128293; &#128293;</p>
-<button onclick="readMoreRedHot()" id="myBtn3">Read more</button>
-</div> -->
 
 </div>
 </section>
+
+
+
+
 <script src="productList.js"></script>
 <script src="index.js"></script>
 <script src="cart.js"></script>

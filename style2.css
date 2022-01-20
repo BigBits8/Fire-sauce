@@ -141,6 +141,7 @@ color:#c70a1d;
   list-style-type: none;
 }
 
+
 @media (max-width: 700px) {
   .footer-container > div {
     background-color: black;
@@ -159,3 +160,6 @@ color:#c70a1d;
 }
 
 
+#shoppingCart{
+  display: none;
+}

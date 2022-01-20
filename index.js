@@ -1,5 +1,4 @@
 
-
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -92,7 +91,6 @@ searchBar.addEventListener('keyup', (e) => {
 const loadProducts = () =>{
     products = db;
     displayProducts(products);
-    console.log(displayProducts);
 }
 
 
@@ -114,9 +112,17 @@ const displayProducts = (products) => {
     .join('');
     productList.innerHTML = htmlString;
 }
+
 loadProducts();
 
-
+function btnShowCart() {
+    x = document.getElementById('shoppingCart');
+    if(x.style.display === 'none') {
+        x.style.display = "block";
+    }else {
+        x.style.display = 'none';
+    }
+}
 
 
 /* 

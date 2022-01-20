@@ -56,7 +56,6 @@
   text-decoration: none;
   color: white;
   padding: 1rem;
-  font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   transition: padding-left 0.5s;
 }
@@ -151,17 +150,22 @@ color:rgb(206, 7, 7);
     color: white;
     padding: 1rem;
   }
+  .navbar-links ul li button .link5 {
+    float: none;
+    position: absolute;
+    top: 90%;
+    left: 68%;
+    transform: translate(50%, -50%);
+  }
 
   .search {
     text-align: center;
     margin-right: 10px;
   }
-  .search button {
-    width: 70%;
-    margin-top: 10px;
-  }
+  
   .search input {
     width: 40vw;
+    
   }
 
   .grid-item {
@@ -196,9 +200,18 @@ color:rgb(206, 7, 7);
     float: none;
     position: absolute;
     top: 50%;
-    left: 58%;
+    left: 68%;
     transform: translate(50%, -50%);
   }
+  .navbar-links ul li button .link5 {
+    float: none;
+    position: absolute;
+    top: 90%;
+    left: 69%;
+    transform: translate(50%, -50%);
+  }
+ 
+  
 }
 /* ON HOVER ON SMALL SCREEN-LESS EFFECT */
 @media (min-width: 370px){
@@ -480,3 +493,53 @@ padding-left: 10px;
 }
 }
 /* Contact form css  slut*/
+
+/*buttons products page*/
+
+#addToCart {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+}
+
+#myBtn {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+
+#myBtn1 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+#myBtn2 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+#myBtn3 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 2px;
+  padding: 4px;
+  margin: 2px;
+
+}
+
