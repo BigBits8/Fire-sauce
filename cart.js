@@ -33,14 +33,45 @@ function addToCart(index){
             <td>${element.name}</td>
             <td>${element.price}</td>
             <td>test</td>
+            <td><button type='button' class='btn-remove' data-id='${index}'>Delete</button></>
         </tr>
         `
     }); 
     cartTableBody.innerHTML = cart;  
     badgeItem();
-} 
+    // DELETE BUTTON
+    const buttonsRemove = document.querySelectorAll(`.btn-remove`);
+    console.log(buttonsRemove);
+
+    for (let i = 0; i < buttonsRemove.length; i++) {
+    const button = buttonsRemove[i];
+    button.addEventListener('click', function(event){
+        // console.log('button clicked');
+        const buttonClicked = event.target;
+        console.log(buttonClicked);
+        buttonClicked.parentElement.parentElement.remove();
+        cartItems.splice(i, 1);
+        console.log(cartItems);
+         
+    })
+   }
+   // DELETE BUTTON SLUT
+   
+}
 
 
 function saveCart() {
     localStorage.cartItem = JSON.stringify(cartItems);
-} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
