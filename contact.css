@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
+
+/* Contact form css */
+
+.contact-page{
+    width: 100%;
+    height: 100vh; 
+}
+
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.form-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images2/contact_img.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.left {
+  height: 100%;
+  background-image: url(images2/contact_img2.png);
+  background-size: cover;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 50px 5px;
+}
+
+.contact-box h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-box h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #47a025;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-top: 10px;
+  transition: 0.3s;
+  border: none;
+}
+
+.field:hover {
+  background-color: grey;
+}
+
+.field:focus{
+  background-color: white;
+}
+
+.button{
+  width: 100%;
+  padding: 0,5rem 1rem ;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  transition: .3s;
+  background-color: rgb(223, 5, 5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: red;
+}
+
+@media screen and (max-width:700px){
+    
+.contact-box{
+  grid-template-columns: 1fr;
+  width: 300px;
+  }
+
+.left{
+  height: 200px;
+  width: 300px;
+}
+}
+/* Contact form css  slut*/

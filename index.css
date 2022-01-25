@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+
+/* CONTENT */
+.container {
+  display: flex;
+  margin-top: 50px;
+}
+.rubrik {
+  text-align: center;
+}
+
+.rubrik-stark {
+  font-family: Montserrat Subrayada !important;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-text {
+  margin-right: 40px;
+  background-color: rgb(196, 87, 44);
+  font-size: 20px;
+  padding-top: 20px;
+  box-shadow: 5px 10px #44434367;
+  color: black;
+  border-radius: 10px 100px 0px 100px;
+}
+.content-text p {
+  padding: 40px;
+  margin-top: 50px;
+}
+.content-text h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 70px;
+}
+.content-text h3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.logo-wrapper {
+  text-align: center;
+  overflow: hidden;
+}
+.logo-firstwefeast {
+  width: 35vw;
+  max-width: 100%;
+  text-align: center;
+}
+
+.content-pic {
+  text-align: center;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 5px 10px #44434367;
+  color: black;
+  border-radius: 100px 10px 100px 0px;
+}
+
+.content-pic img {
+  margin-top: 20px;
+  width: 15vw;
+}
+
+/* CONTENT SLUT */
+/* CONTENT DESCRIPTION */
+.container-description {
+  margin-top: 100px;
+}
+
+.content-header-description h1 {
+  font-size: 100px;
+}
+.content-description-text-big {
+  text-align: center;
+  font-size: 45px;
+}
+.content-description-text-small {
+  text-align: center;
+  font-size: 30px;
+}
+
+.description-text {
+  border: 1px solid black;
+}
+/* CONTENT DESCRIPTION SLUT */
+/* CONTENT HOT-MEDIUM  */
+.container-level {
+  margin-bottom: 100px;
+}
+.content-level-hot-header {
+  background-color: rgba(115, 11, 11, 0.918);
+  border-radius: 10px;
+  margin: 50px;
+}
+.content-level-hot-header h1 {
+  color: black;
+}
+#header-text {
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  color: #212529;
+}
+
+.content-level-medium {
+  margin: 50px;
+}
+
+.content-level-medium-header {
+  background-color: rgba(25, 115, 11, 0.925);
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.content-level-medium-header h1 {
+  color: black;
+}
+
+/* CONTENT HOT-MEDIUM  SLUT*/
+
+/* CONTENT-LEVEL OF SPICY */
+#row-product-index {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#container-product-index {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+#product-index {
+  width: 100%;
+  text-align: center;
+}
+
+/* CONTENT PRODUCT LOGO */
+.container-product-logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
+.content-product-logo img {
+  width: 100%;
+}
+/* CONTENT PRODUCT LOGO SLUT */

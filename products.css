@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+h1{
+font-family: 'Bebas Neue', cursive;
+text-align: center;
+}
+
+ul li a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: light;
+}
+
+/* -------Produktsida------- */
+
+
+ #products {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  
+ }
+
+ #productBody h1 {
+   font-size: 2.5rem;
+   margin-top: 4rem;
+   color:black;
+   font-family: Montserrat Subrayada;
+   font-weight: bold;
+ }
+
+ #productBody .grid-item {
+   font-size: 0.75rem;
+   background-color: white;
+  
+   
+ }
+
+ #productBody .grid-item img {
+   height: 35%
+   }
+
+   #productBody .grid-item h1 {
+    border-bottom: 5px solid rgb(255, 0, 0);
+    font-weight: normal;
+    color:black; 
+    font-size: 22px;
+   }
+
+   #productBody .grid-container {
+     /* background-color:  rgb(6, 102, 14); */
+     border: 5px solid black;
+     border-radius: 10px;
+   }
+   
+ 
+
+.grid-container {
+  display:grid;
+  grid-column-gap: 1%;
+  /* grid-template-columns: auto auto auto auto; */
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+#more {display: none;}
+
+#more1 {display: none;}
+
+#more2 {display: none;}
+
+#more3 {display: none;}
+
+
+#addToCart {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+}
+
+#myBtn {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+
+#myBtn1 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+#myBtn2 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+
+}
+#myBtn3 {
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 2px;
+  padding: 4px;
+  margin: 2px;
+
+}

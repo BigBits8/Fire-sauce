@@ -1,29 +1,12 @@
-//Varukorgfunktion
-/* addToCart();
-
-function addToCart() {
-    let cart = ``;
-    for (let i = 0; i < cartItems.length; i++) {
-        const shoppingcart= cartItems[i];
-        cart += `
-        <tr>
-            <td>${shoppingcart.name}</td>
-            <td>${shoppingcart.price}</td>
-            <td>test</td>
-        </tr>
-        `
-    }
-    console.log(cartItems)
-    cartTableBody.innerHTML = cart;
-
-} */
 
 
+//function to show amount of items in shopping cart
 function badgeItem() {
     let badgeCount= cartItems.length;
     badgeNumber.innerHTML = badgeCount;
 }
 
+//Function to add products to shopping cart
 function addToCart(index){
     let cart = ``;
     cartItems.push(db[index]);
@@ -32,7 +15,6 @@ function addToCart(index){
         <tr>
             <td>${element.name}</td>
             <td>${element.price}</td>
-            <td>test</td>
             <td><button type='button' class='btn-remove' data-id='${index}'>Delete</button></>
         </tr>
         `
@@ -59,7 +41,7 @@ function addToCart(index){
    
 }
 
-
+//SAVES cartItem TO CART ARRAY 
 function saveCart() {
     localStorage.cartItem = JSON.stringify(cartItems);
 }

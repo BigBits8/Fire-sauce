@@ -1,11 +1,13 @@
-
+//variabler för togglemeny och navbarlänkar
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+//funktion för togglebar active
 toggleButton.addEventListener('click', ()=>{
     navbarLinks.classList.toggle('active')
 });
 
+//------ START funktioner för read more alla produkter-------
 function readMoreCaribbean() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -69,10 +71,10 @@ function readMoreRedHot() {
         moreText3.style.display = "inline";
     }
 }
+//------ END funktioner för read more alla produkter-------
 
 
-
-
+// Start of search function
 
 const productList = document.getElementById('charactersList');
 const searchBar = document.getElementById('searchBar');
@@ -85,8 +87,10 @@ searchBar.addEventListener('keyup', (e) => {
 });
     displayProducts(filteredProducts);
 });
+// End of search function
 
 
+// Generate products on products page
 
 const loadProducts = () =>{
     products = db;
@@ -114,7 +118,10 @@ const displayProducts = (products) => {
 }
 
 loadProducts();
+// Generate products on products page end
 
+
+// Function to show shopping cart
 function btnShowCart() {
     x = document.getElementById('shoppingCart');
     if(x.style.display === 'none') {
@@ -124,38 +131,3 @@ function btnShowCart() {
     }
 }
 
-
-
-/* 
-let products = pl;
-
-const displayProducts = (products) => {
-    const products = pl[i];
-    const htmlString = products.map((products) => {
-        return `
-        <li class>
-        </li>
-        `;
-    })
-}
-let gridPrintOut = document.querySelector(".grid-container");
-
-getGridOutput();
-function getGridOutput() {
-let productList = ``;
-  for (let i = 0; i < pl.length; i++) {
-    const product = pl[i];
-
-    productList += `
-        <div class = "grid-item">
-        <img src="${product.img}">
-        <h1>${product.name}</h1>
-        <a href="demo" " class="btn btn-primary" data-bs-toggle="collapse">More Info</a>
-        <div id="demo" class="collapse">${product.info}</div>
-        </div>
-
-        `;
-  }
-  gridPrintOut.innerHTML = productList;
-    console.log(productList);
-} */
