@@ -34,7 +34,7 @@ function addToCart(index){
         buttonClicked.parentElement.parentElement.remove();
         cartItems.splice(i, 1);
         console.log(cartItems);
-         
+        badgeItem()
     })
    }
    // DELETE BUTTON SLUT
