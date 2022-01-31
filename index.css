@@ -6,6 +6,11 @@
   display: flex;
   margin-top: 50px;
 }
+
+#container-product-index img {
+  height: 66%;
+}
+
 .rubrik {
   text-align: center;
 }
