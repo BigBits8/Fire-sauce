@@ -186,7 +186,7 @@
     float: none;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translate(50%, -50%);
   }
   .navbar-links ul li .link4 {
@@ -196,18 +196,11 @@
     left: 68%;
     transform: translate(50%, -50%);
   }
-  .navbar-links ul li button .link5 {
-    float: none;
-    position: absolute;
-    top: 90%;
-    left: 69%;
-    transform: translate(50%, -50%);
-  }
 }
 /* ON HOVER ON SMALL SCREEN-LESS EFFECT */
 @media (min-width: 370px) {
   .navbar-links ul li a:hover {
-    padding-left: 10px;
+    padding-left: 14px;
   }
 }
 
